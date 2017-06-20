@@ -1,0 +1,97 @@
+<!-- TabHost必须包含一个 TabWidget和一个FrameLayout -->
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- TabWidget的id属性必须为 @android:id/tabs -->
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+
+        <!-- FrameLayout的id属性必须为 @android:id/tabcontent -->
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <RadioGroup
+            android:id="@+id/tab_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_bar_height"
+            android:layout_marginTop="@dimen/tab_bar_margin_top"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/直播"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/ic_home_menu_bg"
+                android:gravity="center"
+                android:text="@string/首页"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/地块"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/ic_land_menu_bg"
+                android:gravity="center"
+                android:text="@string/地块"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/种植计划"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/ic_zhongzhi_menu_bg"
+                android:gravity="center"
+                android:text="@string/种植计划"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/服务"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/ic_fuwu_menu_bg"
+                android:gravity="center"
+                android:text="@string/服务"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

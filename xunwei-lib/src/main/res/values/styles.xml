@@ -1,0 +1,19 @@
+<resources>
+
+     <style name="pop_window_bottom_anim">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom_out</item>
+    </style>
+
+    <style name="AnimationSlideinFromLeft">
+        <item name="android:windowEnterAnimation">@anim/slidein_from_left</item>
+        <item name="android:windowExitAnimation">@anim/slideout_from_left</item>
+    </style>
+
+    <style name="AnimationSlideinFromRight">
+        <item name="android:windowEnterAnimation">@anim/slidein_from_right</item>
+        <item name="android:windowExitAnimation">@anim/slideout_from_right</item>
+    </style>
+
+    
+</resources>

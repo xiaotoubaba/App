@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">junior-lib</string>.
+    <string name="toast_get_qiniu_token_err">获取七牛token失败</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/timePicker1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+            <com.jovision.xunwei.junior.lib.view.MyWheelView
+                android:id="@+id/date_pick_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+            <com.jovision.xunwei.junior.lib.view.MyWheelView
+                android:id="@+id/date_pick_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+            <com.jovision.xunwei.junior.lib.view.MyWheelView
+                android:id="@+id/date_pick_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray"
+        android:layout_below="@id/timePicker1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePicker1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <!-- todo porting @drawable/selector_btn_offline_cancel -->
+        <TextView
+            android:id="@+id/btn_datetime_sure"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@android:string/ok"
+            android:textColor="@color/green2"
+            android:textSize="15dp"
+            android:gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>

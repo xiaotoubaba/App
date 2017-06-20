@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">翻滚吧、肥仔</string>
+    <!--tab 标题-->
+    <string name="首页">首页</string>
+    <string name="地块">地块</string>
+    <string name="种植计划">种植计划</string>
+    <string name="服务">服务</string>
+    <string name="k_null"> 1</string>
+    <!-- 加载dialog-->
+    <string name="str_tips">提示</string>
+    <string name="str_setting">设置</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_loading">加载中…</string>
+    <string name="str_error_network">网络连接不可用,是否进行设置?</string>
+    <string name="str_server_error">服务端或者网络异常，请稍后重试</string>
+    <string name="str_dialog_tips_waiting">请稍等…</string>
+
+    <!--login-->
+    <string name="hint_username_empty">请输入用户名</string>
+    <string name="str_login_register">注册</string>
+    <string name="str_lognin_forget_password">忘记密码</string>
+    <!--视频播放-->
+    <string name="btn_login">登陆</string>
+    <!-- common -->
+    <string name="btn_confirm">确定</string>
+
+    <!-- modify password -->
+    <string name="input_hint_pwd_empty">请输入密码</string>
+    <string name="input_hint_old_pwd">请输入原密码</string>
+    <string name="input_hint_new_pwd">请输入新密码</string>
+    <string name="input_hint_confirm_pwd">请输入确认新密码</string>
+    <string name="toast_mobile_empty">账号不能为空</string>
+    <string name="toast_mobile_format_error">手机号码格式不正确</string>
+    <string name="toast_pwd_length_error">密码长度只能在6&#8211;20之间</string>
+    <string name="toast_pwd_mismatch">新密码与确认密码不一致</string>
+    <string name="toast_modify_pwd_succ">修改密码成功</string>
+    <string name="toast_old_pwd_error">旧密码密码有误</string>
+
+    <string name="app_exit">再按一次退出程序</string>
+
+</resources>

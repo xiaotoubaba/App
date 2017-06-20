@@ -1,0 +1,158 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/root_layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/login_top" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@mipmap/login_passwd_border"
+            android:drawablePadding="20dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15px"
+                android:gravity="center"
+                android:text="账号"
+                android:textColor="@color/black3"
+                android:textSize="17dp" />
+
+            <com.jovision.xunwei.junior.lib.view.ClearEditText
+                android:id="@+id/login_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="25px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_username_empty"
+                android:singleLine="true"
+                android:textColor="@color/black3"
+                android:textColorHint="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5px"
+                    android:background="@color/transparent"
+                    android:text="验证码"
+                    android:textColor="@color/black3"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/login_passwd_border"
+            android:drawablePadding="20dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15px"
+                android:gravity="center"
+                android:text="密码"
+                android:textColor="@color/black3"
+                android:textSize="17dp" />
+
+            <com.jovision.xunwei.junior.lib.view.ClearEditText
+                android:id="@+id/login_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="25px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_username_empty"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/black3"
+                android:textColorHint="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/login_del_pwd"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20px"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/login_del_all"
+                    android:textColor="@color/black3"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/login_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@mipmap/login_config_btn_bg"
+            android:text="@string/btn_login"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/login_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/text_login"
+                android:gravity="center_vertical|right"
+                android:text="@string/str_login_register"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/login_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/text_login"
+                android:gravity="center_vertical|left"
+                android:text="@string/str_lognin_forget_password"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>
